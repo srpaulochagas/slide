@@ -46,7 +46,6 @@ img {
 .arrow-nav {
   display: flex;
   justify-content: space-around;
-  margin: 20px 0;
 }
 
 .arrow-nav button {
@@ -61,4 +60,27 @@ img {
 
 .arrow-nav button.prev {
   transform: rotate(-180deg);
+}
+
+[data-control='slide'] {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+[data-control='slide'] li a {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #508d4e;
+  border-radius: 50%;
+  overflow: hidden;
+  text-indent: -999px;
+  margin: 5px;
+}
+
+[data-control='slide'] li.active a,
+[data-control='slide'] li a:hover {
+  background: #365c34;
 }
